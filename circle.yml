@@ -6,9 +6,6 @@ general:
        - $CIRCLE_TEST_REPORTS
        - target       
 test:
-  minitest_globs:
-    - test/integration/**/*.rb
-    - test/extra-dir/**/*.rb
     override:
        - mvn clean package
     post:
